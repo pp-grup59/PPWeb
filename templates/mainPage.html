@@ -1,0 +1,280 @@
+{% load static %}
+{% load bootstrap_icons %}
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ПП - Электромонтажные работы пермский край</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/Logo1x1.png' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
+    <link rel="stylesheet" href="{% static 'css/styles.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos.min.min.css' %}">
+</head>
+<body class="index-page">
+<header class="d-flex flex-column header dark-background" id="header"><i
+        class="d-xl-none header-toggle bi">{% bs_icon 'list' size='0.9em' %}</i>
+    <div class="profile-img"><img class="rounded-circle img-fluid" src="{% static 'img/Logo1x1.png' %}" alt=""></div>
+    <a class="d-flex justify-content-center align-items-center logo" href="/"><h1 class="sitename">ООО ПП</h1>
+    </a>
+    <nav id="navmenu" class="navmenu">
+        <ul>
+            <li>
+                <a href="#hero" class="active"><i class="bi m-1 ">{% bs_icon 'house' %}</i>Home</a><a class="active"
+                                                                                                      href="#about">
+                <i class="bi m-1">{% bs_icon 'people-fill' %} </i>О нас</a><a class="active" href="#services"><i
+                    class="bi m-1">{% bs_icon 'clipboard2-check' %}</i>Услуги</a><a class="active" href="#Vacancies"><i
+                    class="bi m-1">{% bs_icon 'person-vcard-fill' %}</i>Вакансии</a><a class="active" href="#contact"><i
+                    class="bi m-1">{% bs_icon 'chat' %}</i>Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <section id="hero" class="hero section dark-background"><img src="{% static 'img/factory_light_1.jpg' %}" alt=""
+                                                                 data-aos="fade-in"
+                                                                 style="background:  no-repeat;background-size: cover;">
+        <div class="container" data-aos="fade-up" data-aos-delay="100"><h2>ООО "ПП"</h2>
+            <p>Проектирование и монтаж инженерных систем!<span class="typed-cursor typed-cursor--blink"
+                                                               aria-hidden="true"></span></p></div>
+    </section>
+    <section id="about" class="about section">
+        <div class="container section-title" data-aos="fade-up"><h2><br><strong><span
+                style="color: var(--color,var(--theme-color-title));">О нас в двух Абзацах</span></strong></h2>
+            <p><span style="color: rgb(33, 33, 33);">Мы небольшая, но крепкая команда специалистов, занимающаяся электрикой на протяжении 5 лет. Самое важное для нас - это выполнить работу качественно и по всем технологическим требованиям. Мы гордимся своим профессионализмом и вниманием к деталям, что позволяет нам создавать надёжные и безопасные электрические системы для наших клиентов.</span>
+            </p></div>
+    </section>
+    <section id="stats" class="stats section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="stats-item"><i class="bi ">{% bs_icon 'calendar4-week' size='0.9em' %}</i><span
+                            class="purecounter"
+                            data-purecounter-start="0"
+                            data-purecounter-end="5"
+                            data-purecounter-duration="1"></span>
+                        <p><strong>Лет на рынке&nbsp;</strong></p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stats-item"><i class="bi ">{% bs_icon 'house' size='0.9em' %}</i><span
+                            class="purecounter"
+                            data-purecounter-start="0"
+                            data-purecounter-end="48"
+                            data-purecounter-duration="1"></span>
+                        <p><strong>Выполненных проектов за год&nbsp;</strong></p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stats-item"><i class="bi ">{% bs_icon 'clock' size='0.9em' %}</i><span
+                            class="purecounter"
+                            data-purecounter-start="0"
+                            data-purecounter-end="24"
+                            data-purecounter-duration="1"></span>
+                        <p><strong>Часа в сутки, мы на связи</strong></p></div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stats-item"><i class="bi ">{% bs_icon 'people' size='0.9em' %}</i><span
+                            class="purecounter"
+                            data-purecounter-start="0"
+                            data-purecounter-end="20"
+                            data-purecounter-duration="1"></span>
+                        <p><strong>Человек в штате</strong></p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services section">
+        <div class="container section-title" data-aos="fade-up"><h2>Наши услуги</h2>
+            <p><br><span style="color: rgba(0, 0, 0, 0.8); background-color: rgb(252, 252, 252);">Мы реализуем проекты любой сложности: от разработки концепции до запуска объекта</span><br><br>
+            </p></div>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-6 col-lg-4 d-flex service-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex-shrink-0 icon"><i class="bi ">{% bs_icon 'plug-fill' size='0.9em' %}</i></div>
+                    <div><h4 class="title"><a class="stretched-link" href="service-details.html">Электромонтаж</a></h4>
+                        <p class="description"><span
+                                style="color: rgba(0, 0, 0, 0.8); background-color: rgb(252, 252, 252);">комплекс работ по организации электроснабжения зданий и сооружений любой сложности.</span>
+                        </p></div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex service-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex-shrink-0 icon"><i class="bi ">{% bs_icon 'wifi' size='0.9em' %}</i></div>
+                    <div><h4 class="title"><a class="stretched-link" href="service-details.html">Монтаж Слаботочных
+                        систем</a></h4>
+                        <p class="description"><span
+                                style="color: rgba(0, 0, 0, 0.8); background-color: rgb(252, 252, 252);">комплекс работ по установке информационных сетей с низким напряжением тока.</span>
+                        </p></div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex service-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex-shrink-0 icon"><i class="bi ">{% bs_icon 'shield-fill-check' size='0.9em' %}</i>
+                    </div>
+                    <div><h4 class="title"><a class="stretched-link" href="service-details.html">Монтаж систем
+                        безопасности</a></h4>
+                        <p class="description"><br><span
+                                style="color: rgba(0, 0, 0, 0.8); background-color: rgb(252, 252, 252);">Профессиональный&nbsp;монтаж&nbsp;систем&nbsp;безопасности</span><br><span
+                                style="color: rgba(0, 0, 0, 0.8); background-color: rgb(252, 252, 252);">для&nbsp;комплексной&nbsp;защиты&nbsp;вашего&nbsp;объекта</span><br><br>
+                        </p></div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex service-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex-shrink-0 icon"><i class="bi ">{% bs_icon 'camera-video' size='0.9em' %}</i></div>
+                    <div><h4 class="title"><a class="stretched-link" href="service-details.html">Монтаж
+                        видеонаблюдения</a></h4>
+                        <p class="description"><span
+                                style="color: rgba(0, 0, 0, 0.8); background-color: rgb(252, 252, 252);">Профессиональные решения в области видеонаблюдения для вашей безопасности</span>
+                        </p></div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex service-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="flex-shrink-0 icon"><i class="bi ">{% bs_icon 'fire' size='0.9em' %}</i></div>
+                    <div><h4 class="title"><a class="stretched-link" href="service-details.html">Монтаж пожарной
+                        сигнализации</a></h4>
+                        <p class="description"><span
+                                style="color: rgba(0, 0, 0, 0.8); background-color: rgb(252, 252, 252);">Комплексные решения по обеспечению пожарной безопасности</span>
+                        </p></div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex service-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="flex-shrink-0 icon"><i class="bi ">{% bs_icon 'calendar-week' size='0.9em' %}</i></div>
+                    <div><h4 class="title"><a class="stretched-link" href="service-details.html">Проектные работы</a>
+                    </h4>
+                        <p class="description"><span
+                                style="color: rgba(0, 0, 0, 0.8); background-color: rgb(252, 252, 252);">Создание комплексных инженерных решений для объектов различной функциональности</span>
+                        </p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Vacancies" class="resume section">
+        <div class="container section-title" data-aos="fade-up"><h2>Вакансии</h2>
+            <p><br><span style="color: rgba(0, 0, 0, 0.8); background-color: rgb(252, 252, 252);">В связи с расширением штата мы активно ищем талантливых профессионалов в следующих областях:</span>
+            </p></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200"><h3 class="resume-title">Электромонтёр,
+                    Мастер СМР</h3>
+                    <div class="resume-item"><h4>Обязаности</h4>
+                        <ul>
+                            <li>Прокладка кабельных трасс</li>
+                            <li>Монтаж металлических лотков и кабель каналов</li>
+                            <li>Монтаж заземления</li>
+                            <li>Монтаж оконченных устройств</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item"><h4>Требования</h4>
+                        <ul>
+                            <li>Опыт работы от 1 года (Готовы принять кандидатов без опыта на стажировку)&nbsp;</li>
+                            <li>Отсутствие вредных привычек</li>
+                            <li>Отсутствие судимостей</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item"><h4>Условия</h4>
+                        <ul>
+                            <li>Работа вахтовым методом на объектах пермского края и свердловской области</li>
+                            <li><span style="color: rgba(0, 0, 0, 0.8); background-color: rgb(252, 252, 252);">График 5/2 с 10:00 до 19:00 (может отличаться, в зависимости от объекта)</span>
+                            </li>
+                            <li>Конкурентная заработная плата</li>
+                            <li><span style="color: rgba(0, 0, 0, 0.8); background-color: rgb(252, 252, 252);">Предоставление спецодежды</span>
+                            </li>
+                            <li>Карьерный рост</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200"><h3 class="resume-title">Менеджер по
+                    продажам B2B</h3>
+                    <div class="resume-item"><h4>Обязаности</h4>
+                        <ul>
+                            <li>Обрабатывать входящий поток клиентов</li>
+                            <li>Ведение переговорорв</li>
+                            <li><span style="color: rgba(0, 0, 0, 0.8); background-color: rgb(252, 252, 252);">Проводить презентации продукта</span>
+                            </li>
+                            <li><span style="color: rgba(0, 0, 0, 0.8); background-color: rgb(252, 252, 252);">Поддерживать базу данных в CRM</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume-item"><h4>Требования</h4>
+                        <ul>
+                            <li>Уверенное владение ПК</li>
+                            <li>Опыт работы в продажах от 2х лет</li>
+                            <li>Хорошие навыки коммуникации</li>
+                            <li>Ответственность и исполнительность</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item"><h4>Условия</h4>
+                        <ul>
+                            <li>Удалённый формат работы</li>
+                            <li><span style="color: rgba(0, 0, 0, 0.8); background-color: rgb(252, 252, 252);">График 5/2 с 10:00 до 19:00&nbsp;</span>
+                            </li>
+                            <li>Конкурентная заработная плата</li>
+                            <li>Работа с крупными компаниями</li>
+                            <li>Карьерный рост</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact section">
+        <div class="container section-title" data-aos="fade-up"><h2>Контакты</h2></div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-4">
+                <div class="col-lg-5">
+                    <div class="info-wrap">
+                        <div class="d-flex info-item" data-aos="fade-up" data-aos-delay="200">
+                            <div></div>
+                        </div>
+                        <div class="d-flex info-item" data-aos="fade-up" data-aos-delay="300"><i
+                                class="flex-shrink-0 bi ">{% bs_icon 'telephone' size='0.9em' %}</i>
+                            <div><h3>Телефон</h3>
+                                <p>8(922)369-43-79</p></div>
+                        </div>
+                        <div class="d-flex info-item" data-aos="fade-up" data-aos-delay="400"
+                        >
+                            <i class="flex-shrink-0 bi">{% bs_icon 'envelope' size='0.9em' %}"</i>
+                            <div><h3>Email&nbsp;</h3>
+                                <p>info@pp-grup.ru</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form data-aos="fade-up" data-aos-delay="200" action="/feedback/" method="post"
+                          class="php-email-form">
+                        {% csrf_token %}
+                        <div class="row gy-4">
+                            <div class="col-md-6"><label class="pb-2" for="name-field">Имя</label><input
+                                    class="form-control form-control" type="text" id="name-field" name="name"
+                                    required=""></div>
+                            <div class="col-md-6"><label class="pb-2" for="tel">телефон</label><input
+                                    class="form-control form-control" type="tel" id="phone-field" name="tel"
+                                    required=""></div>
+                            <div class="col-md-12"><label class="pb-2" for="subject-field">Заголовок</label><input
+                                    class="form-control form-control" type="text" id="subject-field" name="title"
+                                    required=""></div>
+                            <div class="col-md-12"><label class="pb-2" for="message-field">Сообщение</label><textarea
+                                    class="form-control form-control" id="message-field" name="message" required=""
+                                    rows="10"></textarea></div>
+                            <div class="col-md-12 text-center">
+                                <div class="loading"><span>Отправка</span></div>
+                                <div class="error-message"></div>
+                                <div class="sent-message"><span>Отправленно</span></div>
+                                <button type="submit">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+        <div class="text-center copyright"><p>© <span>Copyright</span><strong class="px-1 sitename"></strong><span>All Rights Reserved</span>
+        </p></div>
+    </div>
+</footer>
+<a class="d-flex justify-content-center align-items-center scroll-top" href="#" id="scroll-top"><i
+        class="bi ">{% bs_icon 'arrow-up-short' size='0.9em' %}</i></a>
+
+<div id="preloader"></div>
+
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/script.min.js' %}"></script>
+<script src="{% static 'js/aos.min.min.js' %}"></script>
+</body>
+</html>
