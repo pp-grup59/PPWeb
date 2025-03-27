@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-yfmzd&n(m_k2ye^*yper*93kl47c*+l5xdpd%i7*0_(f^gg08p
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ['https://pp-grup.ru/']
 
 # Application definition
 
