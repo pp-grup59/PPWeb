@@ -23,10 +23,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-yfmzd&n(m_k2ye^*yper*93kl47c*+l5xdpd%i7*0_(f^gg08p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = ['https://pp-grup.ru/']
+
+CORS_REPLACE_HTTPS_REFERER = True
+
+CSRF_COOKIE_DOMAIN = 'https://pp-grup.ru/'
+
+CORS_ORIGIN_WHITELIST = (
+    'front.https://pp-grup.ru/',
+    'https://pp-grup.ru/',
+)
 
 # Application definition
 
